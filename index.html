@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>IMC</title>
+</head>
+<body>
+
+    <header>
+        <h1>ÍNDICE DE MASSA CORPORAL</h1>
+    </header>
+
+
+        <main class="conteudo">
+           <section class="conteudo-principal">
+              <h3 class="conteudo-principal-subtitulo">Altura (ex.:1,70)</h3>
+              <input class="conteudo-principal-caixa" type="number" id="altura" placeholder="Metros">
+              
+              <br>
+              <br>
+              
+              <h3 class="conteudo-principal-subtitulo">Peso (ex.: 65.2)</h3>
+              <input class="conteudo-principal-caixa" type="number" id="peso" placeholder="Quilos">
+              
+              <br>
+              <br>
+              <h3 class="conteudo-principal-subtitulo">IMC</h3>
+              <input class="conteudo-principal-caixa-imc" type="text" id="imc" onblur="addValor()" readonly>
+              <br>
+              <br>
+              <div class="conteudo-principal-alinhar">
+              <button class="conteudo-principal-botao-2" type="button" id="limpar" onclick="limpValor()">Limpar</button>
+              <button class="conteudo-principal-botao-1" type="button" id="enviar" onclick="enviarResposta()">Calcular</button>
+            </div>
+            </section>
+
+            <section class="conteudo-secundario" onload="listValor()">
+                <div class="list">
+                    <table>
+                        <thead>
+                            <tr><!--Linha 1-->
+                                <th>IMC</th>
+                                <th>CLASSIFICAÇÃO</th>
+                                <th>OBESIDADE</th>
+                            </tr>
+                            <tr>
+                                <td>MENOR QUE 18.5</td>
+                                <td>MAGREZA</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>ENTRE 18.5 E 24.9</td>
+                                <td>NORMAL</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>ENTRE 25.0 E 29.9</td>
+                                <td>SOBREPESO</td>
+                                <td>I</td>
+                            </tr>
+                            <tr>
+                                <td>ENTRE 30.0 E 39.9</td>
+                                <td>OBESIDADE</td>
+                                <td>II</td>
+                            </tr>
+                            <tr>
+                                <td class>MAIOR QUE 40.0</td>
+                                <td>OBESIDADE GRAVE</td>
+                                <td>III</td>
+                            </tr>
+                        </thead>
+                        <tbody id="table-linha">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+          </main>
+    
+
+    <footer>
+        <ul>Raquel Moreira, 2A - SENAI</ul>
+        <ul><a href="https://github.com/raquelm16">Github</a></ul>
+    </footer>
+
+</body>
+</html>
