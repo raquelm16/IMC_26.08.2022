@@ -28,7 +28,7 @@ header {
     color: rgba(9, 61, 129, 0.87);
 }
 
-.conteudo{
+.container{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -39,21 +39,21 @@ header {
     margin: 30px;
 }
 
-.conteudo-principal {
+.container-principal {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-.conteudo-principal-subtitulo {
+.container-principal-subtitulo {
     font-size: 15px;
     text-align: center;
     padding-bottom: 5px;
 }
 
 
-.conteudo-principal-caixa {
+.container-principal-caixa {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -66,7 +66,7 @@ header {
     font-size: 15px;
 }
 
-.conteudo-principal-caixa-imc {
+.container-principal-caixa-imc {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -80,7 +80,7 @@ header {
     background-color: rgba(198, 223, 255, 0.87);
 }
 
-.conteudo-principal-botao-1 {
+.container-principal-botao-1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -95,7 +95,7 @@ header {
     font-size: 15px;
 }
 
-.conteudo-principal-botao-2 {
+.container-principal-botao-2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -110,7 +110,7 @@ header {
     font-size: 15px;
 }
 
-.conteudo-principal-alinhar {
+.container-principal-alinhar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -144,7 +144,7 @@ header {
     border-bottom: rgba(35, 118, 228, 0.87) solid 1px;
 }
 
-.conteudo-secundario {
+.container-secundario {
     padding-top: 30px;
     padding-bottom: 30px;
 }
